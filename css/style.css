@@ -1,0 +1,103 @@
+:root {
+    --main-color: #f7e5d2;
+}
+
+/* Start Navbar */
+
+.navbar {
+    background-color: var(--main-color);
+}
+
+.navbar ul .nav-item {
+    margin-left: 30px;
+}
+
+
+.navbar .navbar-nav .nav-link.active,
+.navbar .navbar-nav .nav-link:focus {
+    color: black;
+    transition: 0.3s;
+}
+
+.navbar .navbar-nav .nav-link:hover {
+    color: #394236;
+}
+
+.navbar .navbar-toggler {
+    border-color: black;
+    background-color: white;
+    font-size: 25px;
+}
+
+.navbar .navbar-toggler:focus {
+    box-shadow: none;
+}
+
+.nav-link {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    font-size: 17px;
+}
+
+@media (max-width:991px) {
+    .nav-link {
+        display: flex;
+        justify-content: center;
+        margin-top: 20px;
+        font-size: 27px;
+        margin-bottom: 40px;
+    }
+}
+
+.nav-link img {
+    width: 30px;
+    border-radius: 50%;
+}
+
+@media (max-width:991px) {
+    .nav-link img {
+        width: 45px;
+        border-radius: 50%;
+    }
+}
+
+/* End Navbar */
+
+/* Start Footer */
+.footer {
+    background-color: #394236;
+    position: relative;
+    bottom: 0;
+}
+
+.footer form input {
+    border: 1px solid white;
+    border-right: 0px solid transparent;
+    background-color: transparent;
+    border-radius: 0;
+}
+
+.footer form input[type="email"]:focus,
+.footer form input:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+    outline: none;
+}
+
+.form .btn {
+    border-radius: 0;
+    border-right: none;
+    transition: 0.2s;
+}
+
+.form .btn:hover,
+.form .btn:focus {
+    background-color: rgba(255, 255, 255, 0.2);
+    color: white;
+}
+
+.footer .links {
+    font-size: 50px;
+}
+
+/* End Footer */
