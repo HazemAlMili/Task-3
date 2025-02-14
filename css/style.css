@@ -64,6 +64,76 @@
 
 /* End Navbar */
 /* Start contact */
+/* Start Left */
+.contact {
+    position: relative;
+}
+
+.contact .landing {
+    background-color: rgb(251 242 232);
+}
+
+.contact .landing h1 {
+    font-size: 55px;
+    font-weight: bold;
+}
+
+.contact .landing p {
+    font-size: 20px;
+    font-weight: 300;
+}
+
+.contact::before {
+    content: '';
+    width: 1px;
+    height: 50%;
+    background-color: black;
+    position: absolute;
+    top: 75%;
+    left: 56%;
+    transform: translate(-50%, -50%);
+}
+
+@media (max-width:769px) {
+    .contact::before {
+        display: none;
+    }
+}
+
+.contact .left-side input {
+    border: 1px solid black;
+    outline: none;
+}
+
+.contact .left-side input:focus {
+    border-color: #394236;
+}
+
+.contact .left-side .btn {
+    transition: 0.3s;
+    background-color: #394236;
+    color: white;
+}
+
+.contact .left-side .btn:hover {
+    background-color: white;
+    color: black;
+}
+
+/* End Left */
+
+/* Start Right*/
+.contact .right-side .fol .links {
+    margin-left: 50px;
+}
+
+.contact .right-side .fol .links a {
+    color: black;
+}
+
+
+/* End Right */
+
 
 /* End contact */
 
@@ -71,6 +141,7 @@
 .footer {
     background-color: #394236;
     position: relative;
+    z-index: 1000;
     bottom: 0;
 }
 
