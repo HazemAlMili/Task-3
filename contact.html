@@ -54,6 +54,16 @@
                             Login
                         </a>
                     </li>
+                    <li class="nav-item">
+                        <a class="nav-link cart " href="#cartMessage" class="btn btn-link position-relative no-caret"
+                            data-bs-toggle="collapse" role="button" aria-expanded="false" aria-controls="cartMessage">
+                            Cart <span>(0)</span>
+                        </a>
+                        <div class="collapse cart-content" id="cartMessage">
+                            <h1 class="fs-5 text-center fw-bold">Cart <span class="fs-6">(0 Items)</span></h1>
+                            <p class="text-center fs-4 pt-5 ">Your Cart is Empty</p>
+                        </div>
+                    </li>
                 </ul>
             </div>
         </div>
@@ -69,100 +79,57 @@
                 Let your users get to know you.
             </p>
         </div>
-        <div class="container-fluid ">
-            <div class="left-side mb-5 mt-5">
-
-                <div class="row">
-                    <div class="col-md-3 col-lg-3 mb-3">
-                        <label class="mb-3" for="f-name">First Name *</label><br>
-                        <input class="p-2 rounded-0 border-1 me-3 w-100" type="text" name="name" id="f-name">
-                    </div>
-                    <div class="col-md-3 col-lg-3 mb-3">
-                        <label class="mb-3" for="l-name">last Name *</label><br>
-                        <input class="p-2 rounded-0 border-1 w-100" type="text" name="name" id="l-name">
-                    </div>
+        <div class="container py-5">
+            <div class="row g-5">
+                <!-- Left Column - Form -->
+                <div class="col-md-6">
+                    <form>
+                        <div class="row g-3">
+                            <div class="col-md-6">
+                                <label class="form-label">First name *</label>
+                                <input type="text" class="form-control" required>
+                            </div>
+                            <div class="col-md-6">
+                                <label class="form-label">Last name *</label>
+                                <input type="text" class="form-control" required>
+                            </div>
+                            <div class="col-12">
+                                <label class="form-label">Email *</label>
+                                <input type="email" class="form-control" required>
+                            </div>
+                            <div class="col-12">
+                                <label class="form-label">Message</label>
+                                <textarea class="form-control"></textarea>
+                            </div>
+                            <div class="col-12">
+                                <button type="submit" class="btn btn-send ">Send</button>
+                            </div>
+                        </div>
+                    </form>
                 </div>
 
 
+                <!-- Right Column - Contact Info -->
+                <div class="col-md-6">
+                    <div class="section-heading">
+                        <h5 class="text-uppercase mb-3">Address</h5>
+                        <p class="mb-1">500 Terry Francine St.</p>
+                        <p class="mb-4">San Francisco, CA 94158</p>
 
+                        <h5 class="text-uppercase mb-3">Phone</h5>
+                        <p class="mb-4">123-456-7890</p>
 
-
-
-
-
-
-                <div class="row">
-                    <div class="col-md-6 col-lg-6 mb-3">
-                        <label class="mb-3" for="email">Email *</label><br>
-                        <input class="p-2 rounded-0 border-1 w-100" type="email" name="email" id="email">
+                        <h5 class="text-uppercase mb-3">Email</h5>
+                        <p class="mb-0">
+                            <a href="mailto:info@mysite.com" class="text-decoration-none text-dark">info@mysite.com</a>
+                        </p>
                     </div>
-                </div>
-
-
-
-
-                <div class="row">
-                    <div class="col-md-6 col-lg-6 mb-3">
-                        <label class="mb-3" for="mes">Message *</label><br>
-                        <input class="pb-5  rounded-0 border-1 w-100" type="text" name="mes" id="mes">
-                    </div>
-                </div>
-
-
-
-
-
-
-
-
-
-
-                <div class="row">
-                    <div class="col-md-6 col-lg-6 mb-3">
-                        <button type="button" class="btn btn-outline-dark w-100 rounded-0 mt-3">Send</button>
-                    </div>
-                </div>
-            </div>
-
-        </div>
-    </div>
-
-    <div class="right-side">
-        <div class="row mb-5">
-            <div class="col-md-4 col-lg-3 ">
-                <i class="fa-solid fa-location-dot fs-1 ms-4 mb-1"></i>
-                <h2 class="ms-4">Adress</h2>
-                <p class="ms-4">
-                    500 Terry Francine St.
-                    <br>
-                    San Francisco, CA 94158
-                </p>
-            </div>
-            <div class="col-md-4 col-lg-3 mt-1">
-                <i class="fa-solid fa-phone ms-4 fs-2 mb-1"></i>
-                <h2 class="ms-4 mb-3">Phone</h2>
-                <p class="ms-4 fs-5">
-                    123-456-7890
-                </p>
-            </div>
-        </div>
-        <div class="row mb-5 ">
-            <div class="col-md-4 col-lg-3 ">
-                <i class="fa-regular fa-envelope fs-1 ms-4 mb-1"></i>
-                <h2 class="ms-4">Email</h2>
-                <a href="info@mysite.com" class="text-dark ms-4 fs-4">info@mysite.com</a>
-            </div>
-            <div class="col-md-4 col-lg-3">
-                <i class="fa-regular fa-thumbs-up ms-4 fs-1 mb-1"></i>
-                <h2 class="ms-4 mb-1">Follow</h2>
-                <div class="links fs-3">
-                    <a href="https://facebook.com" class="text-dark ms-4 "><i class="fa-brands fa-x-twitter"></i></a>
-                    <a href="https://twitter.com" class="text-dark"><i class="fa-brands fa-facebook"></i></a>
-                    <a href="https://instagram.com" class="text-dark"><i class="fa-brands fa-instagram"></i></a>
                 </div>
             </div>
         </div>
     </div>
+
+
 
     <!-- End Contact -->
 
