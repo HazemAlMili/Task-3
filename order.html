@@ -17,7 +17,7 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Playfair:ital,opsz,wght@0,5..1200,300..900;1,5..1200,300..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
         rel="stylesheet">
-    <title>Document</title>
+    <title>Order Online</title>
 </head>
 
 <body>
@@ -26,7 +26,7 @@
         <!-- Start Navbar -->
         <nav class="navbar navbar-expand-lg pt-4 pb-5 ps-3">
             <div class="container-fluid">
-                <a class="navbar-brand" href="#">
+                <a class="navbar-brand" href="home.html">
                     <img class="w-75 ms-1" src="images/logo.png" alt="">
                 </a>
                 <button class="navbar-toggler me-3" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
@@ -36,13 +36,13 @@
                 <div class="collapse navbar-collapse " id="navbarNav">
                     <ul class="navbar-nav  ms-auto me-4 mb-2 mb-lg-0 mt-1">
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#">Home</a>
+                            <a class="nav-link active" aria-current="page" href="home.html">Home</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#">This Is Us</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Our Menu</a>
+                            <a class="nav-link" href="menu-html">Our Menu</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="order.html">Order Online</a>
@@ -61,27 +61,125 @@
             </div>
         </nav>
         <!-- End Navbar -->
+        <!-- Start Order -->
+        <div class="order">
+            <div class="landing mb-5">
+                <img src="images/order online landing.avif" alt="">
+            </div>
+            <div class="container-fluid">
+                <h1 class="pt-1 ps-3">Order Online</h1>
+                <p class="fs-6 ps-4">You can order online! Browse our menu items and choose what you'd like to order
+                    from us.</p>
+                <div class="accept ps-4 ">
+                    <p>Accepting Oredr</p>
+                </div>
+                <div class="pops mb-3 mt-4">
 
-        <div class="content ms-5 mb-5 pt-5">
-            Hello
+                    <div class="modal fade" id="exampleModalToggle" aria-hidden="true"
+                        aria-labelledby="exampleModalToggleLabel" tabindex="-1">
+                        <div class="modal-dialog modal-dialog-centered">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h1 class="modal-title fs-4" id="exampleModalToggleLabel">How would you like to
+                                        receive your order?</h1>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <button class="btn pp-btn" data-bs-target="#exampleModalToggle"
+                                        data-bs-toggle="modal">PickUp</button>
+                                    <button class="btn d-btn" data-bs-target="#exampleModalToggle2"
+                                        data-bs-toggle="modal">Delivery</button>
+                                    <p class="mb-1">
+                                        Pickup from:
+                                        <br>
+                                        San Francisco, CA, USA
+                                    </p>
+                                    <p>When:</p>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="flexRadioDefault"
+                                            id="flexRadioDefault1" checked>
+                                        <label class="form-check-label" for="flexRadioDefault1">
+                                            up to 30 minutes
+                                        </label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="flexRadioDefault"
+                                            id="flexRadioDefault2">
+                                        <label class="form-check-label" for="flexRadioDefault2">
+                                            Schedule for later
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="modal-footer">
+                                    <button class="btn s-btn" data-bs-toggle="modal">Save</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="btn p-btn" data-bs-target="#exampleModalToggle"
+                        data-bs-toggle="modal">PickUp</button>
+
+                    <div class="modal fade" id="exampleModalToggle2" aria-hidden="true"
+                        aria-labelledby="exampleModalToggleLabel2" tabindex="-1">
+                        <div class="modal-dialog modal-dialog-centered">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h1 class="modal-title fs-5" id="exampleModalToggleLabel2">How would you like to
+                                        receive your order?</h1>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <button class="btn pp-btn" data-bs-target="#exampleModalToggle"
+                                        data-bs-toggle="modal">Pickup</button>
+                                    <button class="btn d-btn " data-bs-target="#exampleModalToggle2"
+                                        data-bs-toggle="modal">Delivery</button>
+                                    <p class="mt-4">Deliver to:</p>
+
+                                    <input class="w-100 p-2 rounded-0 border-1 mt-0" type="text"
+                                        placeholder="Type in your Delivery Address">
+                                </div>
+                                <div class="modal-footer">
+
+                                    <button class="btn s-btn" data-bs-toggle="modal">Save</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="btn d-btn" data-bs-target="#exampleModalToggle2" data-bs-toggle="modal">
+                        Delivery
+                    </button>
+                    <div class="pop-text d-flex mt-3">
+                        <p class="ms-2 text-black-50">
+                            <i class="fa-solid fa-clock"></i>
+                            Pickup time: up to 30 minutes
+                            <button class="btn ps-0 border-0 c-btn" data-bs-target="#exampleModalToggle"
+                                data-bs-toggle="modal">Change</button>
+                        </p>
+                        <p class="mt-2 ms-2 text-black-50">
+                            <i class="fa-solid fa-location-dot text-black-50"></i>
+                            Pickup Address: San Francisco, CA
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="dropdown-center mb-5 pb-5 ms-5 d-flex">
+                <button class="btn dropdown-toggle border-0 " type="button" data-bs-toggle="dropdown"
+                    aria-expanded="false">
+                    Drinks
+                </button>
+                <ul class="dropdown-menu">
+                    <li><a class="dropdown-item mb-3" href="#">Drinks</a></li>
+                    <li><a class="dropdown-item mb-3" href="#">All Day Every Day</a></li>
+                </ul>
+                <div class="links mt-1 ms-5">
+                    <a href="#">Coffee</a>
+                    <a href="#">Specialty Drinks</a>
+                </div>
+            </div>
         </div>
-
-
-
-
-
-
-
-
-
-
-
-        <!-- Content -->
-
-
-
-
-
+        <!-- End Order -->
 
 
 
@@ -138,8 +236,18 @@
         <script src="js/bootstrap.bundle.js.map"></script>
         <script src="js/bootstrap.bundle.min.js"></script>
 
+        <div class="menu">
+            <div class="landing">
+                <h1></h1>
+                <p></p>
+            </div>
+            <div class="container-fluid">
+
+            </div>
+        </div>
+
     </body>
 
-</body>
+
 
 </html>
