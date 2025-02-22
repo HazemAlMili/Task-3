@@ -126,10 +126,172 @@
 }
 
 /* End Navbar */
+
+/* Start Home */
+.home .landing {
+    position: relative;
+}
+
+.home .landing img {
+    height: 100%;
+    opacity: 5;
+}
+
+.home .landing .tolip {
+    background-color: #404d3c;
+    padding: 20px;
+    color: white;
+    font-weight: 300;
+    text-align: center;
+    position: relative;
+}
+
+.home .landing .tolip::before {
+    content: '';
+    width: 0;
+    height: 0;
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+    border-right: 10px solid white;
+    position: absolute;
+    left: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+}
+
+.home .landing .tolip::after {
+    content: '';
+    width: 0;
+    height: 0;
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+    border-left: 10px solid white;
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+}
+
+.home .landing .landing-text {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-weight: bold;
+    color: white;
+}
+
+.home .landing .landing-text h1 {
+    font-size: 70px;
+}
+
+
+.home .landing .landing-text p {
+    font-size: 20px;
+    font-weight: 200;
+}
+
+
+
+.home .landing .landing-text .links a {
+    color: white;
+    border: 1px solid white;
+    font-weight: 200;
+    padding: 10px 20px;
+    transition: 0.3s;
+}
+
+.home .landing .landing-text .links a:hover {
+    background-color: #4e5a4a;
+}
+
+
+@media (max-width: 768px) {
+    .home .landing .landing-text h1 {
+        font-size: 50px;
+        top: 10%;
+    }
+
+    .home .landing .landing-text p {
+        font-size: 15px;
+    }
+
+    .home .landing .landing-text .links {
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 500px) {
+    .home .landing .landing-text h1 {
+        font-size: 30px;
+        top: 10%;
+    }
+
+    .home .landing .landing-text p {
+        font-size: 15px;
+    }
+}
+
+.home .botn {
+    color: black;
+    border: 1px solid black;
+    font-weight: 200;
+    padding: 10px 20px;
+    transition: 0.3s;
+    
+}
+
+.home .botn:hover {
+    background-color: #4e5a4a;
+    color: white;
+}
+
+.home .one h1 {
+    font-size: 90px;
+    margin-left: 40px;
+    font-weight: 900;
+}
+
+
+
+.home .tow h1 {
+    font-size: 90px;
+    margin-left: 40px;
+    font-weight: 900;
+}
+
+.home .three h1 {
+    font-size: 90px;
+    margin-left: 40px;
+    font-weight: 900;
+}
+.home .ftr {
+    position: relative;
+}
+.home .ftr::before {
+    content: "";
+    background-color: #000;
+    height: 150px;
+    width: 1px;
+    display: block;
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+@media (max-width:768px) {
+    .home .ftr::before {
+        display: none;
+    }
+}
+/* End Home */
 /* start menu */
 .menu .landing {
     background-color: rgb(251 242 232);
 }
+
 .menu .landing h1 {
     font-size: 70px;
 }
@@ -137,6 +299,7 @@
 .menu .landing p {
     font-size: 20px;
 }
+
 .menu .menu-section {
     margin-top: 50px;
 }
