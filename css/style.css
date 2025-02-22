@@ -63,80 +63,70 @@
 }
 
 /* End Navbar */
-/* Start contact */
-/* Start Left */
-.contact {
-    position: relative;
+/* start menu */
+.landing{
+background-color: #f4efe3;
 }
-
-.contact .landing {
-    background-color: rgb(251 242 232);
+.menu-section {
+    margin-top: 50px;
 }
-
-.contact .landing h1 {
-    font-size: 55px;
+.category-title {
+    font-weight: bold;
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+.menu-item {
+    margin-bottom: 20px;
+}
+.nav-tabs .nav-link {
+    color: #000;
+}
+.nav-tabs .nav-link.active {
+    font-weight: bold;
+    border-bottom: 2px solid black;
+}
+.menu-container {
+    max-width: 900px;
+    margin: auto;
+    padding: 30px;
+}
+.menu-item {
+    margin-bottom: 20px;
+}
+h2 {
+    text-align: left;
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 25px;
+}
+h5 {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 5px;
+    text-align: left;
+}
+p {
+    font-size: 14px;
+    color: #666;
+    margin: 0;
+}
+.price {
+    font-weight: bold;
+    color: #000;
+    margin-top: 5px;
+}
+.menu-section {
+    margin-bottom: 40px;
+}
+.menu-item h5 {
+    margin-bottom: 0;
     font-weight: bold;
 }
-
-.contact .landing p {
-    font-size: 20px;
-    font-weight: 300;
+.menu-item p {
+    color: #666;
 }
 
-.contact::before {
-    content: '';
-    width: 1px;
-    height: 50%;
-    background-color: black;
-    position: absolute;
-    top: 75%;
-    left: 56%;
-    transform: translate(-50%, -50%);
-}
-
-@media (max-width:769px) {
-    .contact::before {
-        display: none;
-    }
-}
-
-.contact .left-side input {
-    border: 1px solid black;
-    outline: none;
-}
-
-.contact .left-side input:focus {
-    border-color: #394236;
-}
-
-.contact .left-side .btn {
-    transition: 0.3s;
-    background-color: #394236;
-    color: white;
-}
-
-.contact .left-side .btn:hover {
-    background-color: white;
-    color: black;
-}
-
-/* End Left */
-
-/* Start Right*/
-.contact .right-side .fol .links {
-    margin-left: 50px;
-}
-
-.contact .right-side .fol .links a {
-    color: black;
-}
-
-
-/* End Right */
-
-
-/* End contact */
-
+/* end menu */
 /* Start Footer */
 .footer {
     background-color: #394236;
