@@ -279,7 +279,62 @@
     display: flex;
 }
 
+.order .links .cofe,
+.order .links .spce {
+    position: relative;
+    width: fit-content;
+}
 
+.order .links .cofe::before {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 50px;
+    height: 2px;
+    background-color: #404d3c;
+    transform: translateY(-40%);
+}
+
+.order .links .spce::before {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: -2px;
+    width: 0;
+    height: 2px;
+    background-color: #404d3c;
+    transform: translateY(-40%);
+
+    transition: 0.3s;
+}
+
+.order .links .spce:hover::before {
+    display: block;
+    width: 100%;
+}
+
+@media (max-width:362px) {
+
+    .order .links .spce:hover::before,
+    .order .links .cofe::before {
+        display: none;
+    }
+}
+
+.order .drinks .cofe .card,
+.order .drinks .specialty .card,
+.order .all-day .card {
+    background-color: #fbf2e8;
+    padding: 20px 10px;
+    transition: 0.3s;
+}
+
+.order .drinks .cofe .card:hover,
+.order .drinks .specialty .card:hover,
+.order .all-day .card:hover {
+    transform: scale(1.03)
+}
 
 /* End Order */
 
