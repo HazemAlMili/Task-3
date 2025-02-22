@@ -239,7 +239,7 @@
     font-weight: 200;
     padding: 10px 20px;
     transition: 0.3s;
-    
+
 }
 
 .home .botn:hover {
@@ -253,8 +253,6 @@
     font-weight: 900;
 }
 
-
-
 .home .tow h1 {
     font-size: 90px;
     margin-left: 40px;
@@ -266,9 +264,11 @@
     margin-left: 40px;
     font-weight: 900;
 }
+
 .home .ftr {
     position: relative;
 }
+
 .home .ftr::before {
     content: "";
     background-color: #000;
@@ -286,6 +286,7 @@
         display: none;
     }
 }
+
 /* End Home */
 /* start menu */
 .menu .landing {
