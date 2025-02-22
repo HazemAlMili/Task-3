@@ -9,15 +9,78 @@
 }
 
 .navbar ul .nav-item {
-    margin-left: 30px;
+    margin-left: 15px;
 }
 
+.navbar ul .nav-item span {
+    color: #6fa359;
+    margin-left: 5px;
+}
+
+
+.navbar ul .nav-item .cart-content {
+    position: absolute;
+    z-index: 110;
+    width: 250px;
+    right: 0;
+    margin-top: 20px;
+}
+
+.navbar ul .nav-item .cart-content::before {
+    content: '';
+    width: 150%;
+    height: 500%;
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: -100;
+    background-color: #f7e5d2;
+}
+
+@media (max-width:991px) {
+    .navbar ul .nav-item .cart-content::before {
+        content: '';
+        width: 160%;
+        height: 400%;
+        display: block;
+        position: absolute;
+        right: 0;
+        top: 0;
+        z-index: -100;
+        background-color: #c5b5a4;
+    }
+}
+
+.navbar ul .nav-item .cart-content h1 {
+    position: relative;
+    left: -170px;
+    top: 35px;
+}
+
+.navbar ul .nav-item .cart-content h1::after {
+    content: '';
+    width: 144%;
+    height: 0.5px;
+    position: absolute;
+    z-index: 100;
+    background-color: black;
+    top: 145%;
+    left: 50px;
+}
+
+.navbar ul .nav-item .cart-content p {
+    position: relative;
+    top: 200px;
+    left: -55px;
+}
 
 .navbar .navbar-nav .nav-link.active,
 .navbar .navbar-nav .nav-link:focus {
     color: black;
     transition: 0.3s;
 }
+
 
 .navbar .navbar-nav .nav-link:hover {
     color: #394236;
@@ -63,12 +126,17 @@
 }
 
 /* End Navbar */
+HEAD
 /* start menu */
 .landing{
 background-color: #f4efe3;
 }
 .menu-section {
-    margin-top: 50px;
+    margin-top: 50px; }
+
+/* Start contact */
+.contact .landing {
+    background-color: rgb(251 242 232);
 }
 .category-title {
     font-weight: bold;
@@ -126,7 +194,153 @@ p {
     color: #666;
 }
 
+
 /* end menu */
+
+.contact .address,
+.contact .phone {
+    position: relative;
+    padding-top: 1.5rem;
+    margin-bottom: 1.5rem;
+    left: 25%;
+    width: fit-content;
+}
+
+.contact .address::before {
+    content: "";
+    position: absolute;
+    top: -40px;
+    left: -45px;
+    width: 0.5px;
+    height: 140%;
+    background-color: #000;
+}
+
+@media (max-width:768px) {
+    .contact .address::before {
+        display: none;
+    }
+}
+
+.contact .form-control {
+    border-radius: 0;
+    border-color: #000;
+}
+
+.contact textarea.form-control {
+    height: 150px;
+}
+
+.contact .btn-send {
+    background-color: #394236;
+    color: #fff;
+    padding: 12px 40px;
+    border-radius: 0;
+    transition: 0.3s;
+    width: 100%;
+}
+
+/* End contact */
+
+/* Start Order */
+.order .landing img {
+    width: 100%;
+}
+
+.order h1 {
+    font-size: 70px;
+    font-weight: bold;
+}
+
+.order .accept p {
+    background-color: rgb(251 242 232);
+    width: fit-content;
+    padding: 5px 10px 5px 40px;
+    border-radius: 40px;
+    position: relative;
+
+}
+
+.order .accept p::before {
+    content: "";
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #6fde40;
+    display: block;
+    position: absolute;
+    left: 14px;
+    top: 13px;
+}
+
+
+.order .pops .p-btn {
+    border: 1px solid black;
+    border-radius: 0;
+    padding: 10px 90px;
+    background-color: rgb(96 105 93);
+    color: white;
+    margin-right: 0;
+}
+
+.order .pops .pp-btn {
+    border: 1px solid black;
+    border-radius: 0;
+    padding: 10px 90px;
+    background-color: rgb(239 240 238);
+    color: black;
+    margin-right: 0;
+}
+
+.order .pops .d-btn {
+    border: 1px solid black;
+    border-radius: 0;
+    padding: 10px 85px;
+    position: relative;
+    left: -5px;
+}
+
+@media (max-width:499.33px) and (max-width:500px) {
+    .order .pops .d-btn {
+        left: 1.5px;
+        margin-top: 5px;
+    }
+}
+
+.order .pops .s-btn {
+    border: 1px solid transparent;
+    background-color: rgb(96 105 93);
+    padding: 10px 50px;
+    border-radius: 0;
+    color: white;
+}
+
+.order .pops .s-btn:hover {
+    text-decoration: underline;
+}
+
+.order .pops .pop-text .c-btn {
+    color: #4e5a4a;
+    transition: 0.3s;
+}
+
+.order .pops .pop-text .c-btn:hover {
+    text-decoration: underline;
+    color: #6fa359;
+    transition: 0.3s;
+}
+
+.order .links a {
+    color: #394236;
+    display: flex;
+}
+
+
+
+/* End Order */
+
+
+
 /* Start Footer */
 .footer {
     background-color: #394236;
