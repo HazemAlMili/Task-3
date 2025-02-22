@@ -126,20 +126,76 @@
 }
 
 /* End Navbar */
+HEAD
+/* start menu */
+.landing{
+background-color: #f4efe3;
+}
+.menu-section {
+    margin-top: 50px; }
+
 /* Start contact */
 .contact .landing {
     background-color: rgb(251 242 232);
 }
-
-.contact .landing h1 {
-    font-size: 55px;
+.category-title {
+    font-weight: bold;
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+.menu-item {
+    margin-bottom: 20px;
+}
+.nav-tabs .nav-link {
+    color: #000;
+}
+.nav-tabs .nav-link.active {
+    font-weight: bold;
+    border-bottom: 2px solid black;
+}
+.menu-container {
+    max-width: 900px;
+    margin: auto;
+    padding: 30px;
+}
+.menu-item {
+    margin-bottom: 20px;
+}
+h2 {
+    text-align: left;
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 25px;
+}
+h5 {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 5px;
+    text-align: left;
+}
+p {
+    font-size: 14px;
+    color: #666;
+    margin: 0;
+}
+.price {
+    font-weight: bold;
+    color: #000;
+    margin-top: 5px;
+}
+.menu-section {
+    margin-bottom: 40px;
+}
+.menu-item h5 {
+    margin-bottom: 0;
     font-weight: bold;
 }
-
-.contact .landing p {
-    font-size: 20px;
-    font-weight: 300;
+.menu-item p {
+    color: #666;
 }
+
+
+/* end menu */
 
 .contact .address,
 .contact .phone {
@@ -337,6 +393,7 @@
 }
 
 /* End Order */
+
 
 
 /* Start Footer */
