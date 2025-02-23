@@ -37,10 +37,10 @@
                         <a class="nav-link active" aria-current="page" href="home.html">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">This Is Us</a>
+                        <a class="nav-link" href="us.html">This Is Us</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="menu-html">Our Menu</a>
+                        <a class="nav-link" href="menu.html">Our Menu</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="order.html">Order Online</a>
@@ -54,6 +54,16 @@
                             Login
                         </a>
                     </li>
+                    <li class="nav-item">
+                        <a class="nav-link cart " href="#cartMessage" class="btn btn-link position-relative no-caret"
+                            data-bs-toggle="collapse" role="button" aria-expanded="false" aria-controls="cartMessage">
+                            Cart <span>(0)</span>
+                        </a>
+                        <div class="collapse cart-content" id="cartMessage">
+                            <h1 class="fs-5 text-center fw-bold">Cart <span class="fs-6">(0 Items)</span></h1>
+                            <p class="text-center fs-4 pt-5 ">Your Cart is Empty</p>
+                        </div>
+                    </li>
                 </ul>
             </div>
         </div>
@@ -64,14 +74,15 @@
         <div class="landing mb-5">
             <img src="images/order online landing.avif" alt="">
         </div>
-        <div class="container-fluid pb-5 mb-5">
-            <h1 class="pt-1 ps-3">Order Online</h1>
-            <p class="fs-6 ps-4">You can order online! Browse our menu items and choose what you'd like to order
+        <div class="container-fluid pb-5 mb-5 text-start">
+            <h1 class="pt-1 ps-3 text-start">Order Online</h1>
+            <p class="fs-6 ps-4 text-start">You can order online! Browse our menu items and choose what you'd like to
+                order
                 from us.</p>
             <div class="accept ps-4 ">
                 <p>Accepting Oredr</p>
             </div>
-            <div class="pops mb-3 mt-4">
+            <div class="pops text-start mb-3 mt-4">
                 <div class="modal fade" id="exampleModalToggle" aria-hidden="true"
                     aria-labelledby="exampleModalToggleLabel" tabindex="-1">
                     <div class="modal-dialog modal-dialog-centered">
@@ -473,9 +484,7 @@
                 <div class="row align-items-center ms-5">
                     <div class="col-md-6 col-lg-4">
                         <h2 class="text-light">Newsletter</h2>
-                        <p class="text-light mt-5 fs-5 w-100">Stay up to date with all the latest from 47th
-                            Cafe
-                        </p>
+                        <p class="text-light mt-5 fs-5 w-100">Stay up to date with all the latest from 47th Cafe</p>
                         <form>
                             <div class="mb-3 form">
                                 <label for="exampleInputEmail1" class="form-label text-light">Email*</label>
@@ -483,8 +492,7 @@
                                     aria-describedby="emailHelp">
                                 <div class="mt-4 d-flex align-items-center">
                                     <input class="form-check-input me-2" type="checkbox" value="" id="flexCheckDefault">
-                                    <label class="form-check-label text-light" for="flexCheckDefault">Yes,
-                                        subscribe me
+                                    <label class="form-check-label text-light" for="flexCheckDefault">Yes, subscribe me
                                         to
                                         your
                                         newsletter</label>
