@@ -1,0 +1,538 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap Files -->
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css.map">
+    <!-- Main CSS Files -->
+    <link rel="stylesheet" href="css/framework.css">
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair:ital,opsz,wght@0,5..1200,300..900;1,5..1200,300..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <title>Order Online</title>
+</head>
+
+<body>
+    <!-- Start Navbar -->
+    <nav class="navbar navbar-expand-lg pt-4 pb-5 ps-3">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html">
+                <img class="w-75 ms-1" src="images/logo.png" alt="">
+            </a>
+            <button class="navbar-toggler me-3" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon "></span>
+            </button>
+            <div class="collapse navbar-collapse " id="navbarNav">
+                <ul class="navbar-nav  ms-auto me-4 mb-2 mb-lg-0 mt-1">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="us.html">This Is Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="menu.html">Our Menu</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="order.html">Order Online</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link login" href="#">
+                            <img class="me-3" src="images/login profile.jpg" alt="">
+                            Login
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link cart " href="#cartMessage" class="btn btn-link position-relative no-caret"
+                            data-bs-toggle="collapse" role="button" aria-expanded="false" aria-controls="cartMessage">
+                            Cart <span>(0)</span>
+                        </a>
+                        <div class="collapse cart-content" id="cartMessage">
+                            <h1 class="fs-5 text-center fw-bold">Cart <span class="fs-6">(0 Items)</span></h1>
+                            <p class="text-center fs-4 pt-5 ">Your Cart is Empty</p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- End Navbar -->
+    <!-- Start Order -->
+    <div class="order">
+        <div class="landing mb-5">
+            <img src="images/order online landing.avif" alt="">
+        </div>
+        <div class="container-fluid pb-5 mb-5 text-start">
+            <h1 class="pt-1 ps-3 text-start">Order Online</h1>
+            <p class="fs-6 ps-4 text-start">You can order online! Browse our menu items and choose what you'd like to
+                order
+                from us.</p>
+            <div class="accept ps-4 ">
+                <p>Accepting Oredr</p>
+            </div>
+            <div class="pops text-start mb-3 mt-4">
+                <div class="modal fade" id="exampleModalToggle" aria-hidden="true"
+                    aria-labelledby="exampleModalToggleLabel" tabindex="-1">
+                    <div class="modal-dialog modal-dialog-centered">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h1 class="modal-title fs-4" id="exampleModalToggleLabel">How would you like to
+                                    receive your order?</h1>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                    aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <button class="btn pp-btn" data-bs-target="#exampleModalToggle"
+                                    data-bs-toggle="modal">PickUp</button>
+                                <button class="btn d-btn" data-bs-target="#exampleModalToggle2"
+                                    data-bs-toggle="modal">Delivery</button>
+                                <p class="mb-1">
+                                    Pickup from:
+                                    <br>
+                                    San Francisco, CA, USA
+                                </p>
+                                <p>When:</p>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="flexRadioDefault"
+                                        id="flexRadioDefault1" checked>
+                                    <label class="form-check-label" for="flexRadioDefault1">
+                                        up to 30 minutes
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="flexRadioDefault"
+                                        id="flexRadioDefault2">
+                                    <label class="form-check-label" for="flexRadioDefault2">
+                                        Schedule for later
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="modal-footer">
+                                <button class="btn s-btn" data-bs-toggle="modal">Save</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <button class="btn p-btn" data-bs-target="#exampleModalToggle" data-bs-toggle="modal">PickUp</button>
+
+                <div class="modal fade" id="exampleModalToggle2" aria-hidden="true"
+                    aria-labelledby="exampleModalToggleLabel2" tabindex="-1">
+                    <div class="modal-dialog modal-dialog-centered">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h1 class="modal-title fs-5" id="exampleModalToggleLabel2">How would you like to
+                                    receive your order?</h1>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                    aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <button class="btn pp-btn" data-bs-target="#exampleModalToggle"
+                                    data-bs-toggle="modal">Pickup</button>
+                                <button class="btn d-btn " data-bs-target="#exampleModalToggle2"
+                                    data-bs-toggle="modal">Delivery</button>
+                                <p class="mt-4">Deliver to:</p>
+
+                                <input class="w-100 p-2 rounded-0 border-1 mt-0" type="text"
+                                    placeholder="Type in your Delivery Address">
+                            </div>
+                            <div class="modal-footer">
+
+                                <button class="btn s-btn" data-bs-toggle="modal">Save</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <button class="btn d-btn" data-bs-target="#exampleModalToggle2" data-bs-toggle="modal">
+                    Delivery
+                </button>
+                <div class="pop-text d-flex mt-3">
+                    <p class="ms-2 text-black-50">
+                        <i class="fa-solid fa-clock"></i>
+                        Pickup time: up to 30 minutes
+                        <button class="btn ps-0 border-0 c-btn" data-bs-target="#exampleModalToggle"
+                            data-bs-toggle="modal">Change</button>
+                    </p>
+                    <p class="mt-2 ms-2 text-black-50">
+                        <i class="fa-solid fa-location-dot text-black-50"></i>
+                        Pickup Address: San Francisco, CA
+                    </p>
+                </div>
+            </div>
+            <div class="dropdown-center mb-5 pb-5 ms-5 me-0 d-flex">
+                <button class="btn dropdown-toggle border-0" type="button" data-bs-toggle="dropdown"
+                    aria-expanded="false">
+                    Drinks
+                </button>
+                <ul class="dropdown-menu mb-5">
+                    <li><a class="dropdown-item mb-3" href="#drinks">Drinks</a></li>
+                    <li><a class="dropdown-item mb-3" href="#all-day">All Day Every Day</a></li>
+                </ul>
+                <div class="links mt-1 ms-5 d-flex ">
+                    <a class="me-2 cofe" href="#drinks">Coffee</a>
+                    <a class="spce" href="#specialty">Specialty Drinks</a>
+                </div>
+            </div>
+            <h1 class="fs-1 fw-bold mb-4 ms-3">Drinks</h1>
+            <div class="drinks">
+                <div class="cofe">
+                    <h2 class="fs-1 mb-4 ms-4" id="drinks">Coffee</h2>
+                    <div class="row mx-4">
+                        <div class="col-md-6">
+                            <div class="card border-0 rounded-0 mb-5">
+                                <div class="card-header mb-0 bg-transparent border-0">
+                                    <h3 class="fw-bold">Espresso</h3>
+                                </div>
+                                <div class="card-body border-0">
+                                    <p>A shot of rich, concentrated coffee.</p>
+                                    <span>$3.00</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="card border-0 rounded-0 mb-5">
+                                <div class="card-header bg-transparent border-0">
+                                    <h3 class="fw-bold">Americano</h3>
+                                </div>
+                                <div class="card-body border-0">
+                                    <p>Espresso diluted with hot water.</p>
+                                    <span>$4.00</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row mx-4">
+                        <div class="col-md-6">
+                            <div class="card border-0 rounded-0 mb-5">
+                                <div class="card-header bg-transparent border-0">
+                                    <h3 class="fw-bold">Latte</h3>
+                                </div>
+                                <div class="card-body border-0 ">
+                                    <p class="mb-4">Espresso with steamed milk and a light layer of foam.</p>
+                                    <span>$6.00</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="card border-0 rounded-0 mb-5">
+                                <div class="card-header bg-transparent border-0">
+                                    <h3 class="fw-bold">Cappuccino</h3>
+                                </div>
+                                <div class="card-body border-0">
+                                    <p class="mb-4">Equal parts espresso, steamed milk, and foam.</p>
+                                    <span>$6.00</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row mx-4">
+                        <div class="col-md-6">
+                            <div class="card border-0 rounded-0 mb-5">
+                                <div class="card-header bg-transparent border-0">
+                                    <h3 class="fw-bold">Macchiato</h3>
+                                </div>
+                                <div class="card-body border-0">
+                                    <p class="mb-4">Espresso "marked" with a dollop of foam or milk.</p>
+                                    <span>$6.00</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="card border-0 rounded-0 mb-5">
+                                <div class="card-header bg-transparent border-0">
+                                    <h3 class="fw-bold">Flat White</h3>
+                                </div>
+                                <div class="card-body border-0">
+                                    <p class="mb-4">Espresso with steamed milk, less frothy than a latte.</p>
+                                    <span>$8.00</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="specialty">
+                    <h2 class="fs-1 mb-4 ms-4" id="specialty">Specialty Drinks</h2>
+                    <div class="row mx-4">
+                        <div class="col-md-6">
+                            <div class="card border-0 rounded-0 mb-5">
+                                <div class="card-header mb-0 bg-transparent border-0">
+                                    <h3 class="fw-bold">Chai Latte</h3>
+                                </div>
+                                <div class="card-body border-0">
+                                    <p>Spiced tea mixed with steamed milk.</p>
+                                    <span>$12.00</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="card border-0 rounded-0 mb-5">
+                                <div class="card-header bg-transparent border-0">
+                                    <h3 class="fw-bold">Matcha Latte</h3>
+                                </div>
+                                <div class="card-body border-0">
+                                    <p>Finely ground green tea powder mixed with milk.</p>
+                                    <span>$12.00</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row mx-4">
+                        <div class="col-md-6">
+                            <div class="card border-0 rounded-0 mb-5">
+                                <div class="card-header bg-transparent border-0">
+                                    <h3 class="fw-bold">Golden Latte</h3>
+                                </div>
+                                <div class="card-body border-0 ">
+                                    <p class="mb-4">A blend of turmeric, spices, and steamed milk.</p>
+                                    <span>$14.00</span>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+            <h1 class="fs-1 mb-4 ms-4" id="all-day">All Day Every Day</h1>
+            <div class="all-day" id="all-day">
+                <div class="bakery">
+                    <h2 class="fs-1 mb-4 ms-5">Bakery</h2>
+                    <div class="row mx-4">
+                        <div class="col-md-6">
+                            <div class="card border-0 rounded-0 mb-5">
+                                <div class="card-header mb-0 bg-transparent border-0">
+                                    <h3 class="fw-bold">Croissant (Plain/Chocolate)</h3>
+                                </div>
+                                <div class="card-body border-0">
+                                    <p>I'm a dish description. Click “Edit Menu” to open the Restaurant Menu editor
+                                        and change my text.</p>
+                                    <span>$6.00</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="card border-0 rounded-0 mb-5">
+                                <div class="card-header bg-transparent border-0">
+                                    <h3 class="fw-bold">Daily Muffin</h3>
+                                </div>
+                                <div class="card-body border-0">
+                                    <p>I'm a dish description. Click “Edit Menu” to open the Restaurant Menu editor
+                                        and change my text.</p>
+                                    <span>$6.00</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row mx-4">
+                        <div class="col-md-6">
+                            <div class="card border-0 rounded-0 mb-5">
+                                <div class="card-header bg-transparent border-0">
+                                    <h3 class="fw-bold">Cheesecake</h3>
+                                </div>
+                                <div class="card-body border-0 ">
+                                    <p class="mb-4">I'm a dish description. Click “Edit Menu” to open the Restaurant
+                                        Menu editor and change my text.</p>
+                                    <span>$6.00</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="breakfast">
+                    <h2 class="fs-1 mb-4 ms-5">All-Day Breakfast</h2>
+                    <div class="row mx-4">
+                        <div class="col-md-6">
+                            <div class="card border-0 rounded-0 mb-5">
+                                <div class="card-header bg-transparent border-0">
+                                    <h3 class="fw-bold">Granola & Greek Yogurt</h3>
+                                </div>
+                                <div class="card-body border-0 ">
+                                    <p class="mb-4">I'm a dish description. Click “Edit Menu” to open the Restaurant
+                                        Menu editor and change my text.</p>
+                                    <span>$12.00</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="card border-0 rounded-0 mb-5">
+                                <div class="card-header bg-transparent border-0">
+                                    <h3 class="fw-bold">Chia Pudding</h3>
+                                </div>
+                                <div class="card-body border-0 ">
+                                    <p class="mb-4">I'm a dish description. Click “Edit Menu” to open the Restaurant
+                                        Menu editor and change my text.</p>
+                                    <span>$12.00</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row mx-4">
+                        <div class="col-md-6">
+                            <div class="card border-0 rounded-0 mb-5">
+                                <div class="card-header bg-transparent border-0">
+                                    <h3 class="fw-bold">Superfood Acai Bowl</h3>
+                                </div>
+                                <div class="card-body border-0 ">
+                                    <p class="mb-4">I'm a dish description. Click “Edit Menu” to open the Restaurant
+                                        Menu editor and change my text.</p>
+                                    <span>$12.00</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="card border-0 rounded-0 mb-5">
+                                <div class="card-header bg-transparent border-0">
+                                    <h3 class="fw-bold">Avocado Toast</h3>
+                                </div>
+                                <div class="card-body border-0 ">
+                                    <p class="mb-4">I'm a dish description. Click “Edit Menu” to open the Restaurant
+                                        Menu editor and change my text.</p>
+                                    <span>$12.00</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row mx-4">
+                        <div class="col-md-6">
+                            <div class="card border-0 rounded-0 mb-5">
+                                <div class="card-header bg-transparent border-0">
+                                    <h3 class="fw-bold">Eggs Benedict</h3>
+                                </div>
+                                <div class="card-body border-0 ">
+                                    <p class="mb-4">I'm a dish description. Click “Edit Menu” to open the Restaurant
+                                        Menu editor and change my text.</p>
+                                    <span>$12.00</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="card border-0 rounded-0 mb-5">
+                                <div class="card-header bg-transparent border-0">
+                                    <h3 class="fw-bold">Bacon & Eggs on Rye</h3>
+                                </div>
+                                <div class="card-body border-0 ">
+                                    <p class="mb-4">I'm a dish description. Click “Edit Menu” to open the Restaurant
+                                        Menu editor and change my text.</p>
+                                    <span>$12.00</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row mx-4">
+                        <div class="col-md-6">
+                            <div class="card border-0 rounded-0 mb-5">
+                                <div class="card-header bg-transparent border-0">
+                                    <h3 class="fw-bold">Spinach & Salmon Brioche</h3>
+                                </div>
+                                <div class="card-body border-0 ">
+                                    <p class="mb-4">I'm a dish description. Click “Edit Menu” to open the Restaurant
+                                        Menu editor and change my text.</p>
+                                    <span>$12.00</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="card border-0 rounded-0 mb-5">
+                                <div class="card-header bg-transparent border-0">
+                                    <h3 class="fw-bold">Smoked Salmon Bagel</h3>
+                                </div>
+                                <div class="card-body border-0 ">
+                                    <p class="mb-4">I'm a dish description. Click “Edit Menu” to open the Restaurant
+                                        Menu editor and change my text.</p>
+                                    <span>$12.00</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row mx-4">
+                        <div class="col-md-6">
+                            <div class="card border-0 rounded-0 mb-5">
+                                <div class="card-header bg-transparent border-0">
+                                    <h3 class="fw-bold">Green Shakshuka</h3>
+                                </div>
+                                <div class="card-body border-0 ">
+                                    <p class="mb-4">I'm a dish description. Click “Edit Menu” to open the Restaurant
+                                        Menu editor and change my text.</p>
+                                    <span>$12.00</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- End Order -->
+
+
+
+
+        <!-- Start Footer -->
+        <div class="footer pt-5 pb-5 text-center">
+            <div class="container-fluid pt-5 text-md-start">
+                <div class="row align-items-center ms-5">
+                    <div class="col-md-6 col-lg-4">
+                        <h2 class="text-light">Newsletter</h2>
+                        <p class="text-light mt-5 fs-5 w-100">Stay up to date with all the latest from 47th Cafe</p>
+                        <form>
+                            <div class="mb-3 form">
+                                <label for="exampleInputEmail1" class="form-label text-light">Email*</label>
+                                <input type="email" class="form-control" id="exampleInputEmail1"
+                                    aria-describedby="emailHelp">
+                                <div class="mt-4 d-flex align-items-center">
+                                    <input class="form-check-input me-2" type="checkbox" value="" id="flexCheckDefault">
+                                    <label class="form-check-label text-light" for="flexCheckDefault">Yes, subscribe me
+                                        to
+                                        your
+                                        newsletter</label>
+                                    <button type="button" class="btn btn-outline-light mt-3 w-50 p-2 ms-3">Join</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="col-md-6 col-lg-4">
+                        <div class="talk text-light ms-5 ps-5 mb-3 pb-2 mt-4 ">
+                            <h2 class="text-light pb-4 mt-3">Talk to Us</h2>
+                            <p class="tel mb-0">123-456-7890</p>
+                            <a class="text-light" href="info@mysite.com">info@mysite.com</a>
+                            <p class="adress mt-4 pt-3">
+                                500 Terry Francine St. <br>
+                                San Francisco, CA 94158
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4 ">
+                        <div class="links mt-1 mb-5 text-center ps-5 ms-4">
+                            <a class="text-light " href="https://instagram.com">Instagram</a>
+                            <br>
+                            <a class="text-light " href="https://facebook.com">Facebook</a>
+                            <br>
+                            <a class="text-light " href="https://twitter.com">Twitter</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End Footer -->
+
+        <script src="js/all.min.js"></script>
+        <script src="js/bootstrap.bundle.js.map"></script>
+        <script src="js/bootstrap.bundle.min.js"></script>
+
+
+</body>
+
+
+
+</html>

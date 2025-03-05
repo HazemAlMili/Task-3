@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap Files -->
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css.map">
+    <!-- Main CSS Files -->
+    <link rel="stylesheet" href="css/framework.css">
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair:ital,opsz,wght@0,5..1200,300..900;1,5..1200,300..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <title>Contact</title>
+</head>
+
+<body>
+    <!-- Start Navbar -->
+    <nav class="navbar navbar-expand-lg pt-4 pb-5 ps-3">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="home.html">
+                <img class="w-75 ms-1" src="images/logo.png" alt="">
+            </a>
+            <button class="navbar-toggler me-3" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon "></span>
+            </button>
+            <div class="collapse navbar-collapse " id="navbarNav">
+                <ul class="navbar-nav  ms-auto me-4 mb-2 mb-lg-0 mt-1">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="home.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="us.html">This Is Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="menu.html">Our Menu</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="order.html">Order Online</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link login" href="#">
+                            <img class="me-3" src="images/login profile.jpg" alt="">
+                            Login
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link cart " href="#cartMessage" class="btn btn-link position-relative no-caret"
+                            data-bs-toggle="collapse" role="button" aria-expanded="false" aria-controls="cartMessage">
+                            Cart <span>(0)</span>
+                        </a>
+                        <div class="collapse cart-content" id="cartMessage">
+                            <h1 class="fs-5 text-center fw-bold">Cart <span class="fs-6">(0 Items)</span></h1>
+                            <p class="text-center fs-4 pt-5 ">Your Cart is Empty</p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- End Navbar -->
+    <!-- Start Contact -->
+    <div class="contact text-start">
+        <div class="landing text-center mb-5 p-5">
+            <h1 class="mb-3 mt-5">Let's Connect</h1>
+            <p class="mt-4 fs-4">
+                I'm a paragraph. Click here to add your own text and edit me.
+                <br>
+                Let your users get to know you.
+            </p>
+        </div>
+        <div class="container py-5 ps-0 ms-4">
+            <div class="row">
+                <!-- Left Column - Form -->
+                <div class="col-md-6 ">
+                    <form>
+                        <div class="row g-3">
+                            <div class="col-md-6">
+                                <label class="form-label">First name *</label>
+                                <input type="text" class="form-control" required>
+                            </div>
+                            <div class="col-md-6">
+                                <label class="form-label">Last name *</label>
+                                <input type="text" class="form-control" required>
+                            </div>
+                            <div class="col-12">
+                                <label class="form-label">Email *</label>
+                                <input type="email" class="form-control" required>
+                            </div>
+                            <div class="col-12">
+                                <label class="form-label">Message</label>
+                                <textarea class="form-control"></textarea>
+                            </div>
+                            <div class="col-12">
+                                <button type="submit" class="btn btn-send ">Send</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+
+
+                <!-- Right Column - Contact Info -->
+                <div class="col-md-6">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="address">
+                                <i class="fa-solid fa-location-dot fs-3 mb-3"></i>
+                                <h5 class="text-uppercase mb-4">Address</h5>
+                                <p class="mb-1">500 Terry Francine St.</p>
+                                <p class="mb-5">San Francisco, CA 94158</p>
+
+
+                                <i class="fa-solid fa-envelope fs-3 mb-3"></i>
+                                <h5 class="text-uppercase mb-3">Email</h5>
+                                <p class="mb-0">
+                                    <a href="mailto:info@mysite.com"
+                                        class="text-decoration-none text-dark">info@mysite.com</a>
+                                </p>
+                            </div>
+                        </div>
+
+
+
+                        <div class="col-md-6">
+                            <div class="phone">
+                                <i class="fa-solid fa-phone fs-3 mb-3"></i>
+                                <h5 class="text-uppercase mb-4">Phone</h5>
+                                <p class="mb-5">123-456-7890</p>
+
+
+                                <i class="fa-solid fa-thumbs-up fs-3 mb-3 mt-4"></i>
+                                <h5 class="text-uppercase mb-3 ">Follow</h5>
+                                <div class="links d-flex mt-0">
+                                    <a href="https://facebook.com"><i
+                                            class="fa-brands fa-facebook me-3 fs-4 text-dark"></i></a>
+                                    <a href="https://instagram.com"><i
+                                            class="fa-brands fa-instagram me-3 fs-4 text-dark"></i></a>
+                                    <a href="https://twitter.com"><i
+                                            class="fa-brands fa-twitter fs-4 text-dark"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End Contact -->
+    <!-- Start Map -->
+    <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d51672259.45123434!2d163.75122070312494!3d37.77071473849611!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80859a6d00690021%3A0x4a501367f076adff!2sSan%20Francisco%2C%20CA%2C%20USA!5e0!3m2!1sen!2seg!4v1740245970011!5m2!1sen!2seg"
+        width="100%" height="370" style="border:0;" allowfullscreen="" loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade">
+    </iframe>
+    <!-- End Map -->
+
+
+    <!-- Start Footer -->
+    <div class="footer pt-5 pb-5 text-center">
+        <div class="container-fluid pt-5 text-md-start">
+            <div class="row align-items-center ms-5">
+                <div class="col-md-6 col-lg-4">
+                    <h2 class="text-light">Newsletter</h2>
+                    <p class="text-light mt-5 fs-5 w-100">Stay up to date with all the latest from 47th Cafe</p>
+                    <form>
+                        <div class="mb-3 form">
+                            <label for="exampleInputEmail1" class="form-label text-light">Email*</label>
+                            <input type="email" class="form-control" id="exampleInputEmail1"
+                                aria-describedby="emailHelp">
+                            <div class="mt-4 d-flex align-items-center">
+                                <input class="form-check-input me-2" type="checkbox" value="" id="flexCheckDefault">
+                                <label class="form-check-label text-light" for="flexCheckDefault">Yes, subscribe me to
+                                    your
+                                    newsletter</label>
+                                <button type="button" class="btn btn-outline-light mt-3 w-50 p-2 ms-3">Join</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="talk text-light ms-5 ps-5 mb-3 pb-2 mt-4 ">
+                        <h2 class="text-light pb-4 mt-3">Talk to Us</h2>
+                        <p class="tel mb-0">123-456-7890</p>
+                        <a class="text-light" href="info@mysite.com">info@mysite.com</a>
+                        <p class="adress mt-4 pt-3">
+                            500 Terry Francine St. <br>
+                            San Francisco, CA 94158
+                        </p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 ">
+                    <div class="links mt-1 mb-5 text-center ps-5 ms-4">
+                        <a class="text-light " href="https://instagram.com">Instagram</a>
+                        <br>
+                        <a class="text-light " href="https://facebook.com">Facebook</a>
+                        <br>
+                        <a class="text-light " href="https://twitter.com">Twitter</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End Footer -->
+
+    <script src="js/all.min.js"></script>
+    <script src="js/bootstrap.bundle.js.map"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+
+</body>
+
+
+</html>
